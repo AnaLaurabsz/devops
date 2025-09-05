@@ -1,1 +1,0 @@
-print("Arquivo 1")
