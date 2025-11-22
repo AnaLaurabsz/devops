@@ -41,7 +41,7 @@ class APITestCase(unittest.TestCase):
         self.assertEqual(obtido, esperado, f"A mensagem deveria ser '{esperado}', mas veio '{obtido}'")
         
         
-    def test_swagger_ui_accessible(self):
+    def test_swagger_ui_accessible(self):  # Testa se a interface Swagger está acessível.
 
         response = self.client.get('/swagger/')
         self.assertEqual(response.status_code, 200)
